@@ -1,41 +1,41 @@
-let todoArr = [
-	"Play football",
-	"Coding",
-	"Study Typescript"
-];
-
-/* ==================== CASE 01 ==================== */
-/*
-let length	= todoArr.length;
-for(let i = 0; i < length; i++){
-	console.log(todoArr[i]);
-}
-*/
-
-/* ==================== CASE 02 ==================== */
-/*
-for (let index in todoArr) {
-	console.log(index + ": " + todoArr[index]);
-}
-*/
-
-/* ==================== CASE 03 ==================== */
-/*
-for (let todo of todoArr) {
-	console.log(todo);
-}
-*/
-
-/* ==================== CASE 04 ==================== */
-/*
-let todoObj = {
-	id: 169,
-	name: "Play football",
-	status: false
-};
 
 
-for (let index in todoObj) {
-	console.log(index + ": " + todoObj[index]);
-}
-*/
+    let todoArr = [
+        "Play Football",
+        "Codding",
+        "Study TypeScritp"
+    ];
+
+    //=================== CASE 1=======================
+    // console.log(todoArr);
+    // let lenght = todoArr.length; 
+    // for (var i = 0; i <= lenght ; i++) {
+    //     console.log(todoArr[i]);
+    // }
+
+
+     //=================== CASE 2=======================
+     //
+    // for(let index in todoArr)
+    // {
+    //     console.log(index + " : " + todoArr[index]);
+    // }
+
+
+    //=================== CASE 3=======================
+    // for(let todo of todoArr)
+    // {
+    //     console.log(todo);
+    // }
+
+    //=================== CASE 3=======================
+     let todoObj = {
+        id:69,
+        name: 'Play Football',
+        status: false
+    }
+
+    for(let index in todoObj)
+    {
+        console.log(index + " : " + todoObj[index]);
+    }

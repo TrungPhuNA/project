@@ -1,31 +1,20 @@
-let elm = document.getElementById("mContent");
-elm.style.color	= "#0174DF";
 
+    let eml = document.getElementById("mContent");
+    eml.style.color = '#0174DF';
 
+    /* ghi chú
+    let name  = "TypeScript";
+    let price = "100$";
+    eml.innerHTML = `<div>Họ Tên <b>${name}</b> <i style="color: red">${price}</i></div>`;
 
-/* ==================== EXAMPLE 01 ==================== */
+     */
+    let todo = {
+        id:69,
+        name: 'Play Football',
+        status: false
+    }
 
-
-/*
-let name	= "Typescript 123";
-let price	= 25;
-
-elm.innerHTML	= `<div>Course name: <b>${name}</b>, 
-						price: <b style="color: red">${price} USD</b>
-					</div>`;
-*/
-
-/* ==================== EXAMPLE 02 ==================== */
-
-/*
-let todo = {
-	id: 169,
-	name: "Play football",
-	status: false
-};
-
-elm.innerHTML	= `<div id="todo-id-${todo.id}">
-						<i class="${ todo.status == true ? "hidden" : ""} glyphicon glyphicon-ok"></i>
-						<span class="name">${todo.name}</span>
-					</div>`;
-*/
+    eml.innerHTML = `<div class="todo-id-${todo.id}">
+                        <i class="${todo.status == true ? "hidden" : ""} glyphicon glyphicon-ok"></i>
+                        <span class="name">${todo.name}</span>
+                    </div>`;

@@ -1,5 +1,8 @@
-/*
-const COURSE_NAME = "Typescript";
 
-console.log(COURSE_NAME);
-*/
+
+    /**
+     * CONST  hằng số
+     */
+    
+    const CONST_NAME  = "TypeScript";
+    console.log(CONST_NAME);

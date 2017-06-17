@@ -1,48 +1,54 @@
-/* ==================== Property value shorthand ==================== */
-/*
-function getCourse(name, price, free){
-	return {
-		name,
-		price,
-		free
-	}
+
+/** =============Property Shorthand ============= */
+// function getCourse(name, price , free)
+// {
+//     return {
+//         name,
+//         price,
+//         free
+//     }
+// }
+
+
+/** =============Computed Property Names ============= */
+
+
+
+// console.log(getCourse("PHP",19000000,true));
+function getCourse(name, price , free)
+{
+    return {
+        name,
+        price,
+        free,
+        showinfo:function()
+        {
+            console.log(`${name + price + free}`);
+        },
+        showinfo2:function()
+        {
+            console.log(`${name + price + free}`);
+        },
+        showinfo3:function(string)
+        {
+            console.log(`${name + price + free + string}`);
+        }
+    }
 }
 
-console.log(getCourse("ES6", 20, false));
-*/
 
-/* ==================== Method Properties ==================== */
+var myCource = getCourse("PHP",19000000,true);
+myCource.showinfo();
+myCource.showinfo2();
+myCource.showinfo3("_____");
+console.log(myCource);
+/** =============Method Properties ============= */
 
-function getCourse(name, price, free){
-	return {
-		name,
-		price,
-		free,
-
-		showInfo1: function(){
-			console.log(`${ name + " - " + price + " - " + free}`);
-		},
-
-		showInfo2(){
-			console.log(`${ name + " - " + price + " - " + free}`);
-		},
-
-		showInfo3(delimiter = "-"){
-			console.log(`${ name + delimiter + price + delimiter + free}`);
-		}
-	}
+let propPrice = "SUPPORT_";
+let bootstrapSupport = 
+{
+    [propPrice + "chome"] :true,
+    [propPrice + "i"]: true,
+    [propPrice + "friefox"]:false
 }
-
-var myCourse = getCourse("ES6", 20, false);
-myCourse.showInfo3();
-console.log(myCourse);
-
-/* ==================== Computed Property Names ==================== */
-let propPrefix = "support_123_";
-let bootstrapSupport = {
-	[propPrefix + "chrome"]: true,
-	[propPrefix + "ie"]: true,
-	[propPrefix + "firefox"]: false
-}
-
 console.log(bootstrapSupport);

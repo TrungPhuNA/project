@@ -1,24 +1,22 @@
-/* ==================== drawShape() ==================== */
-function drawShape(){
 
-	var mContent = document.getElementById("mContent");
-	mContent.innerHTML = "";
 
-	for(let i = 1; i<= 10; i++){
-		var elmP	= document.createElement("p");
-		elmP.innerHTML = i;
-		
-		elmP.onclick = function(){
-			alert("Selected: #" + i);
-		}
-		// i = 10
-		mContent.appendChild(elmP);
-	}
-
+var mContent = document.getElementById("mContent");
+mContent.innerHTML = "";
+function drawShape()
+{
+    for (let i = 1; i <= 10; i++) {
+        var elmb = document.createElement("p");
+        elmb.innerHTML = i;
+        elmb.onclick = function() {
+            alert("Giá trị là : " + i);
+        };
+        mContent.appendChild(elmb);
+    }
 }
 
-/* ==================== clearShape() ==================== */
-function clearShape(){
-	var mContent = document.getElementById("mContent");
-	mContent.innerHTML = "";
+
+function clearShape()
+{
+   
+    mContent.innerHTML = "";
 }

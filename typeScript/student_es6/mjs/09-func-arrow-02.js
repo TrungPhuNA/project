@@ -1,15 +1,17 @@
-let courses = ["Android", "java", "php", "angular"];
 
-console.log(
-	courses.map( course => {
-		return course.toUpperCase();
-	})
+
+let coutsor  = ["Adroid","java","php","angular"];
+
+
+console.log()
+{
+    coutsor.map(course => {
+        return course.toUpperCase();
+    })
+};
+
+let scoure = [9,4,5,2,6,3,7,2,5];
+scoure.sort(
+    (x,y) => x > y ? true : false
 );
-
-let scores = [9, 2, 8, 4, 7, 3, 1, 8];
-
-scores.sort(
-	(x, y) => x < y ? true : false
-);
-
-console.log(scores);
+console.log(scoure);
